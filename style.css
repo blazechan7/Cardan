@@ -151,4 +151,99 @@ html {
     height: 16px;
   }
   
+  #mainFooter {
+    background-color: #654E6F;
+    padding: 2vw 5vw;
+    background-image: url('img/cardan-footer-bg.png'); 
+    background-repeat: no-repeat;
+    background-position: right center;  
+    background-size: auto 100%;         
+  }
+
+  .footerListItem1 {
+    font-family: "Montserrat Bold";
+    color: white;
+    font-size: 15px;
+  }
+
+  .footerListItem {
+    font-family: "Montserrat Regular";
+    color: white;
+    font-size: 15px;
+  }
+
+  .subListItem,
+  #copyrightSub {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+  }
+
+  #cardanFooterLogo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+  }
+ 
+  .boldText {
+    font-family: "Montserrat Bold";
+  }
+
+  #subFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d3db;
+    padding: 1vw 1vw;
+  }  
+
+  #subFooterList {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    padding: 1vw;
+    margin-left: 2vw;
+  }
+
+  .subListItem {
+    color: #704c80;
+  }
+
+  #copyrightSub {
+    color: #704c80;
+    padding: 1.5vw;
+    margin-right: 2vw;
+  }
+
+  #mainFooterLists {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  #footerIconList ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3vw;
+  }
+  
+  #footerIconList img {
+    width: 50px;
+    height: auto;
+  }
+
+  #toegankelijkheidList,
+  #cardanList,
+  #contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* adjust as needed */
+  }
+
+  .boldText:hover {
+    text-decoration: underline;
+  }
+
   
