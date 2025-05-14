@@ -1,249 +1,267 @@
+/* ===============================
+   RESET & BASE STYLES
+=================================*/
+
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  } 
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  #topBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 2.5vw;
-    background-color: #654E6F;
-    gap: 1vw;
-  }
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 
-  .topbarText {
-    font-family: "Inter Regular";
-    color: white;
-    font-size: 12px;
-  }
+ol, ul {
+  list-style: none;
+}
 
-  .topBarSegment {
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .topBarSegment:hover {
-    text-decoration: underline;
-    color: white;
-    
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  #topBarWrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5vw;
-    padding-right: 8vw;
-  }
 
-  #cardanLogo {
-    margin-top: 1vw;
-    margin-left: 1vw;
-    width: 120px;
-    height: auto;
-  }
+/* ===============================
+   TOP BAR
+=================================*/
 
-  /* #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 5vw;
-    margin-top: 0.5vw;
-  }  */
+#topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 2.5vw;
+  background-color: #654E6F;
+  gap: 1vw;
+}
 
-  #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1250px;   
-    margin: 0 auto;
-    padding: 0.5vw 2vw;
-  }
+#topBarWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  padding-right: 8vw;
+}
 
-  #navbarList {
-    font-family: "Montserrat Medium";
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    column-gap: 2rem;
-    font-size: 14px;
-    margin-top: 1vw;
-    flex-grow: 1;
-    justify-content: center;
-    /* margin-left: 10vw; */
-  }
+.topBarSegment {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
 
-  #themeWrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1vw; 
-  }
+.topbarText {
+  font-family: "Inter Regular";
+  color: white;
+  font-size: 12px;
+}
 
-  #languageChoice {
-    font-family: "Montserrat Medium";
-    font-size: 14px; 
-  }
+.topBarSegment:hover {
+  text-decoration: underline;
+  color: white;
+}
 
-  .arrowDown {
-    width: 10px;   
-    height: 10px;
-    margin-left: 5px;
-    vertical-align: middle;
-  }
 
-  .navbarListItem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* padding: 0 0.5vw; */
-  }
+/* ===============================
+   NAVBAR
+=================================*/
 
-  .navbarListItem a:hover {
-    text-decoration: underline;
-    color: #654E6F;
-  }
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0.5vw 2vw;
+}
 
-  hr {
-    border: none;
-    height: 1px;
-    background-color: lightgray;
-    margin: 0.5vw 0; 
-  }
+#cardanLogo {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  width: 120px;
+  height: auto;
+}
 
-  #sunIcon {
-    width: 16px;
-    height: 16px;
-  }
+#navbarList {
+  font-family: "Montserrat Medium";
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 2rem;
+  font-size: 14px;
+  margin-top: 1vw;
+  flex-grow: 1;
+  justify-content: center;
+}
 
-  #linkArrowIcon {
-    width: 16px;
-    height: 16px;
-  }
+.navbarListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  #cookieIcon {
-    width: 16px;
-    height: 16px;
-  }
-  
-  #mainFooter {
-    background-color: #654E6F;
-    padding: 2vw 5vw;
-    background-image: url('img/cardan-footer-bg.png'); 
-    background-repeat: no-repeat;
-    background-position: right center;  
-    background-size: auto 100%;         
-  }
+.navbarListItem a:hover {
+  text-decoration: underline;
+  color: #654E6F;
+}
 
-  .footerListItem1 {
-    font-family: "Montserrat Bold";
-    color: white;
-    font-size: 15px;
-  }
+.arrowDown {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
 
-  .footerListItem {
-    font-family: "Montserrat Regular";
-    color: white;
-    font-size: 15px;
-  }
+#themeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1vw;
+}
 
-  .subListItem,
-  #copyrightSub {
-    font-family: "Montserrat Regular";
-    font-size: 14px;
-  }
+#languageChoice {
+  font-family: "Montserrat Medium";
+  font-size: 14px;
+}
 
-  #cardanFooterLogo {
-    width: 400px;
-    height: auto;
-    margin-bottom: 3vw;
-    margin-top: 2vw;
-  }
- 
-  .boldText {
-    font-family: "Montserrat Bold";
-  }
+#sunIcon {
+  width: 16px;
+  height: 16px;
+}
 
-  #subFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d9d3db;
-    padding: 1vw 1vw;
-  }  
 
-  #subFooterList {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5vw;
-    padding: 1vw;
-    margin-left: 2vw;
-  }
+/* ===============================
+   DIVIDERS
+=================================*/
 
-  .subListItem {
-    color: #704c80;
-  }
+hr {
+  border: none;
+  height: 1px;
+  background-color: lightgray;
+  margin: 0.5vw 0;
+}
 
-  #copyrightSub {
-    color: #704c80;
-    padding: 1.5vw;
-    margin-right: 2vw;
-  }
 
-  #mainFooterLists {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-    margin-left: 4vw;
-    margin-bottom: 2vw;
-  }
+/* ===============================
+   ICONS
+=================================*/
 
-  #footerIconList ul {
-    display: flex;
-    gap: 1rem;
-    margin-top: 3vw;
-  }
-  
-  #footerIconList img {
-    width: 50px;
-    height: auto;
-  }
+#linkArrowIcon,
+#cookieIcon {
+  width: 16px;
+  height: 16px;
+}
 
-  #toegankelijkheidList,
-  #cardanList,
-  #contactList {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem; /* adjust as needed */
-  }
 
-  .boldText:hover {
-    text-decoration: underline;
-  }
+/* ===============================
+   FOOTER
+=================================*/
+
+#mainFooter {
+  background-color: #654E6F;
+  padding: 2vw 5vw;
+  background-image: url('img/cardan-footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+#cardanFooterLogo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+
+#mainFooterLists {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  margin-left: 4vw;
+  margin-bottom: 2vw;
+}
+
+/* Footer text styles */
+.footerListItem1 {
+  font-family: "Montserrat Bold";
+  color: white;
+  font-size: 15px;
+}
+
+.footerListItem {
+  font-family: "Montserrat Regular";
+  color: white;
+  font-size: 15px;
+}
+
+.boldText {
+  font-family: "Montserrat Bold";
+}
+
+.boldText:hover {
+  text-decoration: underline;
+}
+
+/* Footer list layout */
+#toegankelijkheidList,
+#cardanList,
+#contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Social icons */
+#footerIconList ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3vw;
+}
+
+#footerIconList img {
+  width: 50px;
+  height: auto;
+}
+
+
+/* ===============================
+   SUBFOOTER
+=================================*/
+
+#subFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d3db;
+  padding: 1vw 1vw;
+}
+
+#subFooterList {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+
+.subListItem,
+#copyrightSub {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  color: #704c80;
+}
+
+#copyrightSub {
+  padding: 1.5vw;
+  margin-right: 2vw;
+}
 
   
