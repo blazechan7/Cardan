@@ -59,4 +59,90 @@
 
 .cta-button:hover {
     background-color: #006c36;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    /* Navbar spacing */
+    #navbar {
+        margin-bottom: 3rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .circle-button {
+        position: absolute;
+        bottom: -80px;
+        right: 50%;
+        transform: translateX(50%) rotate(0deg);
+        margin: 0;
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-button:hover {
+        transform: translateX(50%) scale(1.05);
+    }
+
+    /* Content spacing */
+    .content-container {
+        margin-bottom: 100px;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    /* Main content spacing */
+    main {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Extra spacing voor kleinere schermen */
+    #navbar {
+        margin-bottom: 2rem;
+    }
+
+    .content-container {
+        margin-bottom: 120px;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .circle-button {
+        width: 130px;
+        height: 130px;
+        bottom: -65px;
+    }
+
+    .circle-button-inner {
+        padding: 0.3rem;
+    }
+
+    .circle-button-inner p {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .circle-button-inner .small-text {
+        font-size: 0.6em;
+        padding: 0 5px;
+    }
 } 
