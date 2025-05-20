@@ -200,10 +200,6 @@ a {
    BUTTON
   =================================*/
 
-#buttonContainer {
-
-}
-
 #eindButton {
     font-family: "Montserrat Bold";
     color: white;
@@ -219,10 +215,6 @@ a {
 /* ===============================
    IMAGE
   =================================*/
-
-#imageContainer {
-
-}
 
 #cardannerImg {
     width: 1800px;
