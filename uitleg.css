@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  align-items: start;
 }
 
 .faq-item {
@@ -25,6 +26,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   overflow: hidden;
   transition: background 0.3s;
+  height: fit-content;
 }
 
 .faq-question {
@@ -40,6 +42,7 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  line-height: 1.4;
 }
 
 .faq-answer {
@@ -75,6 +78,7 @@
   padding: 0;
   margin: 0;
   text-align: justify;
+  line-height: 1.8;
 }
 
 .faq-icon {

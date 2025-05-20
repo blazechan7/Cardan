@@ -5,69 +5,206 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-  }
+}
   
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
+}
   
-  ol, ul {
+ol, ul {
     list-style: none;
-  }
+}
   
-  img {
+img {
     max-width: 100%;
     height: auto;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
     color: inherit;
-  }
+}
 
-  #eindpaginaContainer {
+/* ===============================
+   MAIN CONTENT
+=================================*/
+
+.content-container {
     display: flex;
-    flex-direction: row;
-    margin: 5vw 10vw 13vw 10vw;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
     align-items: center;
-  }
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+}
 
-  /* ===============================
+.hero-content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.hero-content h1 {
+    font-family: "Montserrat Bold";
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat Regular";
+    color: #333;
+    font-size: 1rem;
+}
+
+.hero-image {
+    width: 52%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 0 0 auto;
+    object-fit: cover;
+}
+
+/* Circle button */
+.circle-button {
+    position: absolute;
+    bottom: -40px;
+    right: -50px;
+    width: 160px;
+    height: 160px;
+    background-color: #654E6F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+    transform: rotate(20deg);
+    border: 5px solid white;
+    z-index: 10;
+    box-shadow: none;
+}
+
+.circle-button:hover {
+    transform: scale(1.05) rotate(10deg);
+}
+
+.circle-button-inner {
+    color: white;
+    padding: 0.5rem;
+    max-width: 90%;
+}
+
+.circle-button-inner p {
+    font-family: "Montserrat Bold";
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #008743;
+    color: white;
+    font-family: "Montserrat Medium";
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #006c36;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+    .content-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .hero-content, .hero-image {
+        width: 100%;
+    }
+    
+    .hero-image {
+        min-width: 0;
+        justify-content: center;
+    }
+    
+    .hero-image img {
+        margin: 0 auto;
+    }
+    
+    .circle-button {
+        position: static;
+        margin: 1rem auto 0 auto;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+/* ===============================
    TEXT 
   =================================*/
 
-  #textContainer {
+#textContainer {
     display: flex;
     flex-direction: column;
     gap: 2vw;
-  }
+}
 
-  #eindTitel {
+#eindTitel {
     font-family: "Montserrat Bold";
-  }
+}
 
-  #eindParagraaf {
+#eindParagraaf {
     font-family: "Montserrat Regular";
     text-align: justify;
     width: 70%;
     font-size: 15px;
-  }
+}
 
-  /* ===============================
+/* ===============================
    BUTTON
   =================================*/
 
-  #buttonContainer {
+#buttonContainer {
 
-  }
+}
 
-  #eindButton {
+#eindButton {
     font-family: "Montserrat Bold";
     color: white;
     background-color: #008743;
@@ -77,19 +214,19 @@ html {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-  }
+}
   
-  /* ===============================
+/* ===============================
    IMAGE
   =================================*/
 
-  #imageContainer {
+#imageContainer {
 
-  }
+}
 
-  #cardannerImg {
+#cardannerImg {
     width: 1800px;
     height: auto;
     border-radius: 10px;
-  }
+}
 
