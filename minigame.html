@@ -59,9 +59,118 @@
     </nav>
     <hr>
 
+    <!-- Top text and image -->
     <main>
-        <!-- Placeholder for main content -->
-    </main>
+
+        <!-- Top container with introduction and color blindness explanation -->
+        <div id="topContainer">
+          <div id="explanationTextContainer">
+            <h1 class="titles">Ervaar kleurenblindheid</h1>
+            <p class="normalText">
+              Op deze pagina ga je zelf proberen een simpele taak uit te voeren maar alsof je kleurenblind bent.
+            </p>
+            <p class="normalText">
+              Onderstaand hebben we vier verschillende challenges waar er wordt gevraagd om het juiste product te selecteren, 
+              bijvoorbeeld een perfect rijpe banaan. Dat klinkt makkelijk, toch? 
+              Maar met een kleurenblindheid-simulatie is het opeens een stuk moeilijker.
+            </p>
+          </div>
+          <div id="schemaContainer">
+            <img id="kleurenSchemas" src="img/Kleurenblindschemas.png" alt="kleurenschema's waarbij normale kleuren en kleurenblindheid worden vergeleken">
+            <p class="lightText">
+              In bovenstaande afbeelding worden een aantal vormen van kleurenblindheid getoond, 
+              de middelste kleurencirkel is hoe kleuren er gewoonlijk uitzien en de buitenste kleurencirkel
+              is hoe mensen met verschillende vormen van kleurenblindheid kleuren ervaren.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Challenge 1: Bananen -->
+        <div id="minigame1Container">
+          <div class="titelContainer">
+            <h1 class="titles">Challenge 1: Welke banaan is perfect rijp?</h1>
+            <p class="lightText">Groen-blind/Deuteranopie: groene fotopigment mist</p>
+          </div>
+          <div id="bananenOpdracht">
+            <div class="opdrachtContainer">
+              <img class="bananaCB" src="img/Minigame/Donkergroene-banaanCB.png" alt="">
+              <img class="bananaCB" src="img/Minigame/Overrijpe-banaanCB.png" alt="">
+              <img class="bananaCB" src="img/Minigame/Groene-banaanCB.png" alt="">
+              <img class="bananaCB" src="img/Minigame/Rijpe-banaanCB.png" alt="">
+            </div>
+            <div class="kleurenblindheidVorm">
+              <img class="kleurenblindSchema" src="img/Deuteranopia.png" alt="Deuteranopia kleurenblindheid">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Challenge 2: Appel -->
+        <div id="minigame2Container">
+          <div class="titelContainer">
+            <h1 class="titles">Challenge 2: Welke appel is donkerrood?</h1>
+            <p class="lightText">Rood-blind/Protanopie: rode fotopigment mist</p>
+          </div>
+          <div id="appelOpdracht">
+            <div class="opdrachtContainer">
+              <img class="appelCB" src="img/Minigame/Gele-appelCB.png" alt="">
+              <img class="appelCB" src="img/Minigame/Roze-appelCB.png" alt="">
+              <img class="appelCB" src="img/Minigame/Rode-appelCB.png" alt="">
+              <img class="appelCB" src="img/Minigame/Groene-appelCB.png" alt="">
+            </div>
+            <div class="kleurenblindheidVorm">
+              <img class="kleurenblindSchema" src="img/Protanopia.png" alt="Protanopia kleurenblindheid">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Challenge 3: Paprika -->
+        <div id="minigame3Container">
+          <div class="titelContainer">
+            <h1 class="titles">Challenge 3: Welke paprika is groen?</h1>
+            <p class="lightText">Blauw-blind/Tritanopie: blauwe fotopigment mist</p>
+          </div>
+          <div id="paprikaOpdracht">
+            <div class="opdrachtContainer">
+              <img class="paprikaCB" src="img/Minigame/Oranje-paprikaCB.png" alt="">
+              <img class="paprikaCB" src="img/Minigame/Groene-paprikaCB.png" alt="">
+              <img class="paprikaCB" src="img/Minigame/Rode-paprikaCB.png" alt="">
+              <img class="paprikaCB" src="img/Minigame/Gele-paprikaCB.png" alt="">
+            </div>
+            <div class="kleurenblindheidVorm">
+              <img class="kleurenblindSchema" src="img/Tritanopia.png" alt="Tritanopia kleurenblindheid">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Challenge 4: Chips -->
+        <div id="minigame4Container">
+          <div class="titelContainer">
+            <h1 class="titles">Challenge 4: Welke chips is naturel?</h1>
+            <p class="lightText">
+              Achromatopsie/Monochromatopsie: Zwart-wit zien of maar één type kleurgevoelige kegeltjes.
+            </p>
+          </div>
+          <div id="chipsOpdracht">
+            <div class="opdrachtContainer">
+              <img class="chipsCB" src="img/Minigame/Groene-chipsCB.png" alt="">
+              <img class="chipsCB" src="img/Minigame/Gele-chipsCB.png" alt="">
+              <img class="chipsCB" src="img/Minigame/Rode-chipsCB.png" alt="">
+              <img class="chipsCB" src="img/Minigame/Blauwe-chipsCB.png" alt="">
+            </div>
+            <div class="kleurenblindheidVorm">
+              <img class="kleurenblindSchema" src="img/Monochromatism.png" alt="Monochromatism kleurenblindheid">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bottom container with completion message and navigation -->
+        <div id="bottomContainer">
+          <h1 class="titles">Ervaring afgerond!</h1>
+          <a id="eindButton" href="eindpagina.html">Klik hier om verder te gaan</a>
+        </div>
+      
+      </main>
+      
 
     <!-- Footer section -->
     <footer>

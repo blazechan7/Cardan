@@ -2,31 +2,217 @@
    RESET & BASE STYLES
 =================================*/
 
+/* Set base box-sizing for all elements */
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Inherit box-sizing for pseudo-elements */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Reset margin, padding, and font-weight for common text elements */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Remove default list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove underline and inherit color on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===============================
+   EXPLANATION SECTION (Top Container)
+=================================*/
+
+/* Layout for top container using flexbox: two columns with space between */
+#topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3vw;
+  padding: 2vw 5vw;
+}
+
+/* Left column with text content, flexible width and vertical stacking */
+#explanationTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 1vw;
+  margin-top: 2vw;
+}
+
+/* Titles styled with bold Montserrat font */
+.titles {
+  font-family: "Montserrat Bold";
+}
+
+/* Normal paragraphs styled with Montserrat Regular, justified text and controlled width */
+.normalText {
+  font-family: "Montserrat Regular";
+  text-align: justify;
+  width: 70%;
+  font-size: 15px;
+}
+
+/* Right column for schema image container */
+#schemaContainer {
+  flex: 1;
+  max-width: 55%;
+  margin-top: 2vw;
+}
+
+/* Schema image styles - full width and slight negative margin to align */
+#kleurenSchemas {
+  width: 2000px;
+  height: auto;
+  margin-left: -1.5vw;
+}
+
+/* Light-colored explanatory text with smaller font size */
+.lightText {
+  font-family: "Montserrat Regular";
+  text-align: justify;
+  width: 90%;
+  color: #757575;
+  font-size: 15px;
+}
+
+/* ===============================
+   MINIGAME 1: BANANEN (Bananas)
+=================================*/
+
+/* Container for challenge title and subtitle with margins */
+.titelContainer {
+  margin-top: 6vw;
+  margin-left: 5vw;
+}
+
+/* Layout for banana challenge content: flex row with large gaps */
+#bananenOpdracht {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15vw;
+}
+
+/* Grid container for banana images: 2 columns, spacing, margin */
+.opdrachtContainer {
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  gap: 2.5vw;
+  margin-top: 2.5vw;
+  margin-left: 5vw;
+}
+
+/* Banana images fixed width for consistency */
+.bananaCB {
+  width: 300px;
+  height: auto;
+}
+
+/* Color blindness schema image with fixed height */
+.kleurenblindSchema {
+  height: 475px;
+  width: auto;
+}
+
+/* ===============================
+   MINIGAME 2: APPELS (Apples)
+=================================*/
+
+/* Layout for apple challenge similar to bananas */
+#appelOpdracht {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15vw;
+}
+
+/* Apple images fixed width */
+.appelCB {
+  width: 300px;
+  height: auto;
+}
+
+/* ===============================
+   MINIGAME 3: PAPRIKA (Peppers)
+=================================*/
+
+/* Layout for paprika challenge */
+#paprikaOpdracht {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15vw;
+}
+
+/* Paprika images fixed width */
+.paprikaCB {
+  width: 300px;
+  height: auto;
+}
+
+/* ===============================
+   MINIGAME 4: CHIPS
+=================================*/
+
+/* Layout for chips challenge */
+#chipsOpdracht {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15vw;
+}
+
+/* Chips images fixed width */
+.chipsCB {
+  width: 300px;
+  height: auto;
+}
+
+/* ===============================
+   BOTTOM BUTTON SECTION
+=================================*/
+
+/* Container centered vertically and horizontally with spacing */
+#bottomContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+/* Styled button-like link with color, padding, border-radius */
+#eindButton {
+  font-family: "Montserrat Bold";
+  color: white;
+  background-color: #008743;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
