@@ -295,7 +295,7 @@ a {
    BUTTON
   =================================*/
 
-#eindButton {
+  #eindButton {
     font-family: "Montserrat Bold";
     color: white;
     background-color: #008743;
@@ -311,9 +311,10 @@ a {
    IMAGE
   =================================*/
 
-#cardannerImg {
+  #cardannerImg {
     width: 1800px;
     height: auto;
     border-radius: 10px;
 }
+
 
