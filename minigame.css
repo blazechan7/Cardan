@@ -38,6 +38,19 @@ a {
 }
 
 /* ===============================
+   HEADING STYLES
+=================================*/
+
+/* Match h1 styling with other pages for consistency */
+.hero-content h1 {
+  font-family: "Montserrat Bold";
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* ===============================
    EXPLANATION SECTION (Top Container)
 =================================*/
 
@@ -61,9 +74,18 @@ a {
   margin-top: 2vw;
 }
 
-/* Titles styled with bold Montserrat font */
+/* Titles styled with bold Montserrat font, matching h1 in other pages */
 .titles {
   font-family: "Montserrat Bold";
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Remove margin when titles are followed by lightText2 */
+.titles + .lightText2 {
+  margin-top: -1.5rem;
 }
 
 /* Normal paragraphs styled with Montserrat Regular, justified text and controlled width */
@@ -71,7 +93,8 @@ a {
   font-family: "Montserrat Regular";
   text-align: justify;
   width: 70%;
-  font-size: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Right column for schema image container */
@@ -95,6 +118,14 @@ a {
   width: 90%;
   color: #757575;
   font-size: 15px;
+}
+
+.lightText2 {
+  font-family: "Montserrat Regular";
+  text-align: justify;
+  width: 90%;
+  color: #757575;
+  font-size: 20px;
 }
 
 /* ===============================
