@@ -130,6 +130,10 @@ a {
   height: auto;
 }
 
+.bananaCB:hover {
+  cursor: pointer;
+}
+
 /* Color blindness schema image with fixed height */
 .kleurenblindSchema {
   height: 475px;
@@ -154,6 +158,10 @@ a {
   height: auto;
 }
 
+.appelCB:hover {
+  cursor: pointer;
+}
+
 /* ===============================
    MINIGAME 3: PAPRIKA (Peppers)
 =================================*/
@@ -172,6 +180,10 @@ a {
   height: auto;
 }
 
+.paprikaCB:hover {
+  cursor: pointer;
+}
+
 /* ===============================
    MINIGAME 4: CHIPS
 =================================*/
@@ -188,6 +200,10 @@ a {
 .chipsCB {
   width: 300px;
   height: auto;
+}
+
+.chipsCB:hover {
+  cursor: pointer;
 }
 
 /* ===============================
